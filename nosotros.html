@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="./img/logo.png" as="image">
+    <link rel="preload" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FrontEnd Store</title>
+</head>
+
+<body>
+    <!-- HTML USANDO BEM -->
+
+    <header class="header">
+        <a href="./index.html">
+            <img class="header__logo" src="./img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__link" href="./index.html">Tienda</a>
+        <a class="nav__link nav__link--active" href="./nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="container">
+        <h2>Sobre Nosotros</h2>
+
+        <div class="info">
+            <div class="info__text">
+                <p>
+                    Pellentesque ac erat eu risus placerat consectetur non vitae sem. Nullam ultricies nibh quis turpis condimentum, a vehicula lacus cursus. Morbi eleifend arcu et lectus aliquam tempus. Vestibulum lorem sem, feugiat a rhoncus vulputate, laoreet sit amet ligula. Ut id justo libero. Quisque a congue libero. Sed tincidunt semper mauris, vel volutpat leo dignissim et. Sed fermentum libero finibus, luctus libero mollis, venenatis nisl. Nullam venenatis risus quis porta tincidunt. Ut varius quam eu arcu porttitor, a suscipit nibh interdum.
+                </p>
+                <p>
+                    Fusce sit amet est eu velit sagittis aliquam. Sed diam tortor, sollicitudin ac enim eget, rhoncus dignissim justo. Vivamus suscipit eleifend arcu. Vestibulum non ornare mi, a maximus enim. 
+                </p>
+            </div>
+
+            <div class="info__img">
+                <img loading="lazy" src="./img/nosotros.jpg" alt="logo-nosotros">
+            </div>
+        </div>
+
+        <h3>Porque comprar con nosotros</h3>
+        <div class="icons">
+            <div class="icons__details">
+                <div class="icons__img">
+                    <img loading="lazy" src="./img/icono_1.png" alt="icon1">
+                </div>
+
+                <div class="icons__text">
+                    <h3>El mejor precio</h3>
+                    <p>adipisicing elit. Quam cumque veniam repellat enim a ipsam exercitationem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="icons__details">
+                <div class="icons__img">
+                    <img loading="lazy" src="./img/icono_2.png" alt="icon1">
+                </div>   
+                
+                <div class="icons__text">
+                    <h3>Para Devs</h3>
+                    <p>adipisicing elit. Quam cumque veniam repellat enim a ipsam exercitationem.
+                    </p>
+                </div>            </div>
+
+            <div class="icons__details">
+                <div class="icons__img">
+                    <img loading="lazy" src="./img/icono_3.png" alt="icon1">
+                </div>
+
+                <div class="icons__text">
+                    <h3>Envio Gratis</h3>
+                    <p>adipisicing elit. Quam cumque veniam repellat enim a ipsam exercitationem.
+                    </p>
+                </div>        
+            </div>
+
+            <div class="icons__details">
+                <div class="icons__img">
+                    <img loading="lazy" src="./img/icono_4.png" alt="icon1">
+                </div>
+
+                <div class="icons__text">
+                    <h3>La mejor calidad</h3>
+                    <p>adipisicing elit. Quam cumque veniam repellat enim a ipsam exercitationem.
+                    </p>
+                </div>          
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Front-End Store - Todos los derechos reservados
+        </p>
+    </footer>
+
+</body>
+
+</html>

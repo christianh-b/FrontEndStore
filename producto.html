@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="./img/logo.png" as="image">
+    <link rel="preload" href="./img/3.jpg" as="image">
+    <link rel="preload" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FrontEnd Store</title>
+</head>
+
+<body>
+    <!-- HTML USANDO BEM -->
+
+    <header class="header">
+        <a href="./index.html">
+            <img class="header__logo" src="./img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__link nav__link--active" href="./index.html">Tienda</a>
+        <a class="nav__link" href="./nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="container">
+        <h2>React Js</h2>
+
+        <div class="product-details">
+            <img loading="lazy" src="./img/3.jpg" alt="imagen-camisa">
+            <div class="product-info">
+                <p class="product__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto consequatur cum
+                    eveniet porro facere omnis, eum hic, assumenda iusto, laborum reiciendis. Repellendus aperiam
+                    omnis dolor vel ipsa magnam mollitia?
+                </p>
+                <form class="form">
+                    <select class="form__field" name="size" id="size">
+                        <option value="" disabled selected>--Seleccione el talle--</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                    <input class="form__field" type="number" name="amount" id="amount" min="1" max="100" value="1">
+                    <input class="form__btn" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Front-End Store - Todos los derechos reservados
+        </p>
+    </footer>
+
+</body>
+
+</html>
